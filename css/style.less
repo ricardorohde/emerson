@@ -1,0 +1,249 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+
+.default-transition() {
+  -webkit-transition: all ease-out 1s;
+  -moz-transition: all ease-out 1s;
+  -o-transition: all ease-out 1s;
+  transition: all ease-out 1s;
+}
+
+.inline-block() {
+  display: inline-block;
+}
+
+.center-txt() {
+  text-align: center;
+}
+
+@default-font: 'Amatic SC', cursive;
+@default-font-color: rgb(0, 0, 0);
+@default-font-size: 2.5em;
+@default-margin: 20px;
+@default-padding: 20px;
+@default-border-radius: 10px;
+
+a, 
+a:visited,
+a:hover,
+a:active,
+a:visited, 
+a:focus {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  font-family: @default-font;
+  color: @default-font-color;
+}
+
+.header-color(@gradient1, @gradient2) {
+  /* For browsers that do not support gradients */
+  background: @gradient1;
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(@gradient1, @gradient2);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(@gradient1, @gradient2);
+  /* For Firefox 3.6 to 15 */
+  background: -moz-linear-gradient(@gradient1, @gradient2);
+  /* Standard syntax */
+  background: linear-gradient(@gradient1, @gradient2);
+}
+
+@header-margin: 0 0 10px 0;
+nav.navbar {
+  .header-color(rgb(255, 255, 255), rgb(250, 250, 250));
+  margin: @header-margin;
+  border-radius: 0;
+}
+
+@h1-font-size: 6em;
+@h1-margin: 20px 40px 20px 20px;
+nav.navbar div.navbar-header h1 {
+  .inline-block;
+  margin: @h1-margin;
+  font-size: @h1-font-size;
+  color: @default-font-color;
+  text-transform: uppercase;
+}
+
+
+nav.navbar ul.nav {
+  margin: 25px 0 0 0;
+}
+
+@nav-font-size: 2em;
+nav.navbar ul.nav li {
+  font-size: @nav-font-size;
+  margin: 10px;
+}
+
+@jumbo-margin: 2px 0;
+@jumbo-padding: 30px;
+div.jumbotron {
+  .default-transition;
+  margin: @jumbo-margin;
+  padding: @jumbo-padding;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.jumbo-title() {
+  .inline-block;
+  margin: 0 20px;
+}
+
+div.jumbotron h2.title {
+  .jumbo-title;
+  font-size: 3.2em;
+}
+
+div.jumbotron span.legend {
+  font-size: 2.3em;
+}
+
+div.jumbotron div.content {
+  font-size: @default-font-size;
+  margin: 30px 20px 0;
+}
+
+div.jumbotron div.content h3.subtitle {
+  margin: 20px 0;
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+div.jumbotron div.content p#quemsou {
+  font-size: .9em;
+  text-align: justify;
+}
+
+/*
+div.jumbotron div.content p#skills {
+}
+
+div.jumbotron div.content p#skills span.skill {
+  .inline-block;
+  font-size: 1.5em;
+  margin: 0 10px;
+  width: 100%;
+  max-width: 210px;
+}
+*/
+
+div.jumbotron span.content-icon {
+  float: right;
+  opacity: .5;
+  font-size: 1.2em;
+}
+
+
+.panel-coloring(@bg-color, @bg-color-hover) {
+  background-color: @bg-color;
+  &:hover {
+    background-color: @bg-color-hover;
+  }
+}
+
+@panel-1-bg-color: rgba(102, 204, 255, .5);
+@panel-1-bg-color-hover: rgb(102, 204, 255);
+
+@panel-2-bg-color: rgba(255, 204, 0, .5);
+@panel-2-bg-color-hover: rgb(255, 204, 0);
+
+@panel-3-bg-color: rgba(153, 255, 102, .5);
+@panel-3-bg-color-hover: rgb(153, 255, 102);
+div#panel-1 { .panel-coloring(@panel-1-bg-color, @panel-1-bg-color-hover); }
+div#panel-2 { .panel-coloring(@panel-2-bg-color, @panel-2-bg-color-hover); }
+div#panel-3 { .panel-coloring(@panel-3-bg-color, @panel-3-bg-color-hover); }
+
+@media-wrapper-margin: 20px 0;
+div#media-wrapper {
+  .center-txt;
+  margin: @media-wrapper-margin;
+  padding: @default-padding;
+}
+
+@media-box-margin: 5px;
+@media-box-bg-color-hover: rgba(255, 255, 255, .35);
+div#media-wrapper div.media-box {
+  .inline-block;
+  .default-transition;
+  margin: @media-box-margin;
+  border: 1px dashed transparent;
+  border-radius: 5px;
+  &:hover {
+    background-color: @media-box-bg-color-hover;
+    border: 1px dashed gray;
+    border-radius: @default-border-radius;
+  }
+}
+
+div#media-wrapper div.media-box img {
+  margin: @default-margin;
+  vertical-align: -200%;
+}
+
+div#media-wrapper div.media-box span {
+  font-size: 2em;
+}
+
+@footer-margin: 30px 0 0;
+@footer-bg-color: rgba(0, 0, 0, .6);
+@footer-font-color: rgb(255, 255, 255);
+footer {
+  .center-txt;
+  margin: @footer-margin;
+  background-color: @footer-bg-color;
+  color: @footer-font-color;
+}
+
+@footer-img-margin: 50px 10px;
+footer img {
+  .default-transition;
+  .inline-block;
+  margin: @footer-img-margin;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+.form-item() {
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 400px;
+  width: 100%;
+  display: block;  
+  font-size: .8em;
+}
+
+form#contato {
+  margin: 0;
+}
+
+form#contato input[type="text"] {
+  .form-item;
+  height: 60px;
+}
+
+form#contato textarea {
+  .form-item;
+  height: 150px;
+  max-height: 300px;
+}
+
+form#contato input[type="submit"] {
+  .form-item;
+  height: 55px;
+  max-width: 110px;
+  padding: 5px;
+}
+
+
+
+
+
+

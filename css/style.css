@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+a,
+a:visited,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: #000;
+}
+body {
+  font-family: 'Amatic SC', cursive;
+  color: #000000;
+}
+nav.navbar {
+  /* For browsers that do not support gradients */
+  background: #ffffff;
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(#ffffff, #fafafa);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(#ffffff, #fafafa);
+  /* For Firefox 3.6 to 15 */
+  background: -moz-linear-gradient(#ffffff, #fafafa);
+  /* Standard syntax */
+  background: linear-gradient(#ffffff, #fafafa);
+  margin: 0 0 10px 0;
+  border-radius: 0;
+}
+nav.navbar div.navbar-header h1 {
+  display: inline-block;
+  margin: 20px 40px 20px 20px;
+  font-size: 6em;
+  color: #000000;
+  text-transform: uppercase;
+}
+nav.navbar ul.nav {
+  margin: 25px 0 0 0;
+}
+nav.navbar ul.nav li {
+  font-size: 2em;
+  margin: 10px;
+}
+div.jumbotron {
+  -webkit-transition: all ease-out 1s;
+  -moz-transition: all ease-out 1s;
+  -o-transition: all ease-out 1s;
+  transition: all ease-out 1s;
+  margin: 2px 0;
+  padding: 30px;
+}
+div.jumbotron:hover {
+  cursor: pointer;
+}
+div.jumbotron h2.title {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 3.2em;
+}
+div.jumbotron span.legend {
+  font-size: 2.3em;
+}
+div.jumbotron div.content {
+  font-size: 2.5em;
+  margin: 30px 20px 0;
+}
+div.jumbotron div.content h3.subtitle {
+  margin: 20px 0;
+  font-size: 1em;
+  text-decoration: underline;
+}
+div.jumbotron div.content p#quemsou {
+  font-size: .9em;
+  text-align: justify;
+}
+/*
+div.jumbotron div.content p#skills {
+}
+
+div.jumbotron div.content p#skills span.skill {
+  .inline-block;
+  font-size: 1.5em;
+  margin: 0 10px;
+  width: 100%;
+  max-width: 210px;
+}
+*/
+div.jumbotron span.content-icon {
+  float: right;
+  opacity: .5;
+  font-size: 1.2em;
+}
+div#panel-1 {
+  background-color: rgba(102, 204, 255, 0.5);
+}
+div#panel-1:hover {
+  background-color: #66ccff;
+}
+div#panel-2 {
+  background-color: rgba(255, 204, 0, 0.5);
+}
+div#panel-2:hover {
+  background-color: #ffcc00;
+}
+div#panel-3 {
+  background-color: rgba(153, 255, 102, 0.5);
+}
+div#panel-3:hover {
+  background-color: #99ff66;
+}
+div#media-wrapper {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+}
+div#media-wrapper div.media-box {
+  display: inline-block;
+  -webkit-transition: all ease-out 1s;
+  -moz-transition: all ease-out 1s;
+  -o-transition: all ease-out 1s;
+  transition: all ease-out 1s;
+  margin: 5px;
+  border: 1px dashed transparent;
+  border-radius: 5px;
+}
+div#media-wrapper div.media-box:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  border: 1px dashed gray;
+  border-radius: 10px;
+}
+div#media-wrapper div.media-box img {
+  margin: 20px;
+  vertical-align: -200%;
+}
+div#media-wrapper div.media-box span {
+  font-size: 2em;
+}
+footer {
+  text-align: center;
+  margin: 30px 0 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+}
+footer img {
+  -webkit-transition: all ease-out 1s;
+  -moz-transition: all ease-out 1s;
+  -o-transition: all ease-out 1s;
+  transition: all ease-out 1s;
+  display: inline-block;
+  margin: 50px 10px;
+  opacity: 0.8;
+}
+footer img:hover {
+  opacity: 1;
+}
+form#contato {
+  margin: 0;
+}
+form#contato input[type="text"] {
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  font-size: .8em;
+  height: 60px;
+}
+form#contato textarea {
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  font-size: .8em;
+  height: 150px;
+  max-height: 300px;
+}
+form#contato input[type="submit"] {
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  font-size: .8em;
+  height: 55px;
+  max-width: 110px;
+  padding: 5px;
+}
