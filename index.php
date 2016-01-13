@@ -50,7 +50,13 @@
 		<span class="legend">Onde mora, como vive, do que se alimenta...</span>
 		
 		<div class="content">
-			<?php include 'includes/sobremim.php'; ?>
+            
+            <h3 class="subtitle">Quem sou?</h3>
+            <p id="quemsou">
+                Salut, sou Emerson Mendonça. Sou instrutor de inglês e estudante de tecnologia da informação.
+                Formado em TI, moro no ABC paulista em São Paulo e dedico meus estudos a área de desenvolvimento.
+            </p>
+            
 		</div>
 		<span class="content-icon glyphicon glyphicon-option-horizontal"></span>
 		
@@ -62,7 +68,7 @@
 		<span class="legend">Separe um tempinho para apreciar meus trabalhos!</span>
 		
 		<div class="content">
-			<?php include 'includes/portfolio.php'; ?>
+			
 		</div>
 		<span class="content-icon glyphicon glyphicon-option-horizontal"></span>
 		

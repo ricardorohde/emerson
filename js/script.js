@@ -1,5 +1,8 @@
 $(function() {
-	// Dropdown:
+	
+    /*
+    
+    // Dropdown:
 	$('.jumbotron > .content').hide();
 	$('.jumbotron').on('click', function(){
 		$(this)
@@ -12,11 +15,13 @@ $(function() {
 		.siblings('.jumbotron')
 		.find('.content')
 		.hide(500);
-		*/
+		* /
 		
 		// return false
 	});
 	
+    */
+    
 	// Navbar:
 	$('ul.nav > li').on('click', function(){
 		$(this)
