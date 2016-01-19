@@ -1,0 +1,327 @@
+@charset "UTF-8";
+
+/*
+	GLOBAL
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-image: url("../img/bg.jpg");
+	margin: 0;
+	padding: 0;
+}
+
+/*
+	SLIDER
+*/
+
+/* jssor slider bullet navigator skin 05 css */
+/*
+.jssorb05 div           (normal)
+.jssorb05 div:hover     (normal mouseover)
+.jssorb05 .av           (active)
+.jssorb05 .av:hover     (active mouseover)
+.jssorb05 .dn           (mousedown)
+*/
+.jssorb05 {
+	position: absolute;
+}
+.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+	position: absolute;
+	/* size of bullet elment */
+	width: 16px;
+	height: 16px;
+	background: url('../img/b05.png') no-repeat;
+	overflow: hidden;
+	cursor: pointer;
+}
+.jssorb05 div { background-position: -7px -7px; }
+.jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+.jssorb05 .av { background-position: -67px -7px; }
+.jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+/* jssor slider arrow navigator skin 22 css */
+/*
+.jssora22l                  (normal)
+.jssora22r                  (normal)
+.jssora22l:hover            (normal mouseover)
+.jssora22r:hover            (normal mouseover)
+.jssora22l.jssora22ldn      (mousedown)
+.jssora22r.jssora22rdn      (mousedown)
+*/
+.jssora22l, .jssora22r {
+	display: block;
+	position: absolute;
+	/* size of arrow element */
+	width: 40px;
+	height: 58px;
+	cursor: pointer;
+	background: url('../img/a22.png') center center no-repeat;
+	overflow: hidden;
+}
+.jssora22l { background-position: -10px -31px; }
+.jssora22r { background-position: -70px -31px; }
+.jssora22l:hover { background-position: -130px -31px; }
+.jssora22r:hover { background-position: -190px -31px; }
+.jssora22l.jssora22ldn { background-position: -250px -31px; }
+.jssora22r.jssora22rdn { background-position: -310px -31px; }
+
+
+
+
+/*
+	PAGE
+*/ 
+
+#wrapper {
+	margin: 20px auto;
+	padding: 20px;
+	max-width: 1000px;
+}
+
+/* Top Box */
+.top-box {
+	margin: 20px auto;
+	padding: 10px 50px;
+	background-color: #000;
+	text-align: center;
+	border-radius: 10px;
+	max-width: 885px;
+}
+
+.row {
+	margin: 10px;
+	color: #fff;	
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+#row-1 {
+	text-align: left;
+	font-size: 33px;
+	line-height: 62px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	border-right: #fff solid 3px;
+}
+
+#row-1 span {
+	font-size: 75px;
+	display: block;
+	letter-spacing: 18px;
+}
+
+#row-2 {
+	overflow: auto;
+	font-size: 35px;
+	vertical-align: -15%;
+	text-align: left;
+}	
+
+#row-2 > a {
+	text-decoration:none;
+	color: #fff;
+}	
+
+#row-2 > a:hover {
+	text-decoration:underline;
+}
+
+/* Container */
+.container {
+	margin: 0 auto 10px;
+	text-align: center;
+	width: auto;
+}
+
+/* Panels headings */
+.panel > .panel-heading {
+	color: #fff;
+}
+
+/* Smaller Panels */
+.smaller-panel {
+	margin: 10px;
+	min-height: 180px;
+	max-width: 280px;
+	width: 100%;
+	display: inline-block;		
+	overflow: auto;
+}
+
+
+/* Larger Panels */
+.larger-panel {
+	min-height: 180px;
+	margin: 10px;
+	display: inline-block;
+	overflow: auto;
+	max-width: 585px;
+	width: 100%;
+}
+
+.larger-panel .panel-body {
+}
+
+.larger-panel .panel-body div {
+	margin: 0 10px;
+	display: inline-block;
+	overflow: auto;
+}
+
+.larger-panel .panel-content {
+	max-width: 300px;
+	min-height: 90px;
+	text-align: left;
+}
+
+.larger-panel .panel-media {	
+}
+
+.larger-panel .panel-media img {
+	margin: 10px;
+	height: 80px;
+	box-shadow: 3px 3px 5px #000;
+}
+
+/*
+	ADDING COLOR TO
+	PANEL HEADINGS
+*/
+
+/* First Container */
+
+/* Panel 01 */
+#panel-1 {
+	border:	rgb(0, 0, 204);
+}
+#panel-1 > .panel-heading {
+	background-color: rgb(0, 0, 204);
+}
+
+/* Panel 02 */
+#panel-2 {
+	border:	rgb(255, 204, 0);
+}
+#panel-2 > .panel-heading {
+	background-color: rgb(255, 204, 0);
+}
+
+/* Panel 03 */
+#panel-3 {
+	border:	rgb(0, 102, 0);
+}
+#panel-3 > .panel-heading {
+	background-color: rgb(0, 102, 0);
+}
+
+/* Panel 04 */
+#panel-4 {
+	border:	rgb(255, 0, 0);
+}
+#panel-4 > .panel-heading {
+	background-color: rgb(255, 0, 0);
+}
+
+/* Panel 05 */
+#panel-5 {
+	border:	rgb(153, 51, 102);
+}
+#panel-5 > .panel-heading {
+	background-color: rgb(153, 51, 102);
+}
+
+/* Panel 06 */
+#panel-6 {
+	border:	rgb(204, 102, 0);
+}
+#panel-6 > .panel-heading {
+	background-color: rgb(204, 102, 0);
+}
+
+/* Panel 07 */
+#panel-7 {
+	border:	rgb(0, 51, 102);
+}
+#panel-7 > .panel-heading {
+	background-color: rgb(0, 51, 102);
+}
+
+/* Panel 08 */
+#panel-8 {
+	border:	rgb(128, 0, 0);
+}
+#panel-8 > .panel-heading {
+	background-color: rgb(128, 0, 0);
+}
+
+/* Panel 09 */
+#panel-9 {
+	border:	rgb(51, 51, 0);
+}
+#panel-9 > .panel-heading {
+	background-color: rgb(51, 51, 0);
+}
+
+
+/* Second Container */
+
+/* Panel 10 */
+#panel-10 {
+	border:	rgb(102, 0, 102);
+}
+#panel-10 > .panel-heading {
+	background-color: rgb(102, 0, 102);
+}
+
+/* Panel 11 */
+#panel-11 {
+	border:	rgb(0, 102, 0);
+}
+#panel-11 > .panel-heading {
+	background-color: rgb(0, 102, 0);
+}
+
+/*
+	POPUP
+*/
+
+.popup {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 2px 2px 15px #000;
+	margin: 0 50px;
+	padding: 30px;
+	width: 65%;
+	height: auto;
+	position: absolute;
+	top: 10%;
+	left: 15%;
+	text-align: center;
+}
+
+.popup-body p {
+	max-width: 500px;
+	vertical-align: top;
+	line-height: 25px;
+	display: inline-block;
+	text-align: left;
+}
+
+.popup-body img {
+	margin: 0 auto;
+	height: auto;
+	max-width: 250px;
+	width: 100%;
+	box-shadow: 3px 3px 5px #000;
+}
+
+#close-x {
+	margin-right: 25px;
+}
+
+#close-button {
+	float: right;
+}

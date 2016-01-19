@@ -1,15 +1,42 @@
-<form id="contato" action="index.php" method="post">
-	<!--<label for="nome">Nome</label>-->
-	<input id="nome" class="form-control" type="text" name="nome" placeholder="Nome" required aria-describedby="sizing-addon1" />
-	
-	<!--<label for="email">E-mail</label>-->
-	<input id="email" class="form-control" type="text" name="email" placeholder="E-mail" required />
-	
-	<!--<label for="empresa">Empresa</label>-->
-	<input id="empresa" class="form-control" type="text" name="empresa" placeholder="Empresa" />
-	
-	<!--<label for="msg">Mensagem</label>-->
-	<textarea id="msg" class="form-control" name="msg" placeholder="Mensagem" required></textarea>
-	
-	<input class="btn btn-default" type="submit" name="enviar" value="Enviar" />
-</form>
+<a href="port/port_1" target="_blank">
+    <div class="port">
+        <img class="port-thumb" src="imgs/port_thumb_1.jpg" />
+        
+        <div class="port-title-holder">
+            <h3 class="port-subtitle">Website #1: Escola</h3>
+        </div>
+    </div>
+</a>
+
+<a href="port/port_2" target="_blank">
+    <div class="port">
+        <img class="port-thumb" src="imgs/port_thumb_2.jpg" />
+        
+        <div class="port-title-holder">
+            <h3 class="port-subtitle">Website #2: Pizzaria</h3>
+        </div>
+    </div>
+</a>
+
+<a href="port/port_4" target="_blank">
+    <div class="port">
+        <img class="port-thumb" src="imgs/port_thumb_4.jpg" />
+        
+        <div class="port-title-holder">
+            <h3 class="port-subtitle">Draft #1: Livraria</h3>
+        </div>
+    </div>
+</a>
+
+
+<!--
+<a href="port/port_3" target="_blank">
+    <div class="port">
+        <img class="port-thumb" src="imgs/port_thumb_3.jpg" />
+        
+        <div class="port-title-holder">
+            <h3 class="port-subtitle">Draft #2: Colégio</h3>
+        </div>
+    </div>
+</a>
+-->

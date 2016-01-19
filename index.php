@@ -47,7 +47,7 @@
 	<div id="panel-1" class="jumbotron">
 		
 		<h2 class="title">Sobre Mim</h2>
-		<span class="legend">Onde mora, como vive, do que se alimenta...</span>
+		<!--<span class="legend">Onde mora, como vive, do que se alimenta...</span>-->
 		
 		<div class="content">
             
@@ -55,35 +55,34 @@
             <p id="quemsou">
                 Salut, sou Emerson Mendonça. Sou instrutor de inglês e estudante de tecnologia da informação.
                 Formado em TI, moro no ABC paulista em São Paulo e dedico meus estudos a área de desenvolvimento.
-            </p>
-            
+            </p>            
 		</div>
-		<span class="content-icon glyphicon glyphicon-option-horizontal"></span>
+        
+		<a href="#"><button type="button" class="btn btn-default">Ver Mais</button></a>
 		
 	</div>
 
 	<div id="panel-2" class="jumbotron">
 		
 		<h2 class="title">Portfólio</h2>
-		<span class="legend">Separe um tempinho para apreciar meus trabalhos!</span>
+		<!--<span class="legend">Separe um tempinho para apreciar meus trabalhos!</span>-->
 		
 		<div class="content">
-			
+			<?php include 'includes/portfolio.php'; ?>
 		</div>
-		<span class="content-icon glyphicon glyphicon-option-horizontal"></span>
+        
+        <a href="#"><button type="button" class="btn btn-default">Ver Mais</button></a>
 		
 	</div>
 
 	<div id="panel-3" class="jumbotron">
 		
 		<h2 class="title">Contato</h2>
-		<span class="legend">Fale comigo, me mande uma pergunta, sugestão, elogio ou, quem sabe, uma proposta! ;)</span>
+		<!--<span class="legend">Fale comigo, me mande uma pergunta, sugestão, elogio ou, quem sabe, uma proposta! ;)</span>-->
 		
 		<div class="content">
 			<?php include 'includes/contato.php'; ?>
-		</div>
-		<span class="content-icon glyphicon glyphicon-option-horizontal"></span>
-		
+		</div>        		
 	</div>
 
 	

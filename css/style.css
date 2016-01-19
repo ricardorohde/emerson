@@ -28,8 +28,8 @@ nav.navbar {
 }
 nav.navbar div.navbar-header h1 {
   display: inline-block;
-  margin: 20px 40px 20px 20px;
-  font-size: 6em;
+  margin: 30px;
+  font-size: 60px;
   color: #000000;
   text-transform: uppercase;
 }
@@ -37,8 +37,9 @@ nav.navbar ul.nav {
   margin: 25px 0 0 0;
 }
 nav.navbar ul.nav li {
-  font-size: 2em;
+  font-size: 30px;
   margin: 10px;
+  text-transform: uppercase;
 }
 div.jumbotron {
   -webkit-transition: all ease-out 1s;
@@ -46,30 +47,30 @@ div.jumbotron {
   -o-transition: all ease-out 1s;
   transition: all ease-out 1s;
   margin: 2px 0;
-  padding: 30px;
-}
-div.jumbotron:hover {
-  cursor: pointer;
+  padding: 30px 30px 60px 30px;
 }
 div.jumbotron h2.title {
   display: inline-block;
-  margin: 0 20px;
-  font-size: 3.2em;
+  /* margin: 20px; */
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
+/*
 div.jumbotron span.legend {
   font-size: 2.3em;
 }
+*/
 div.jumbotron div.content {
-  font-size: 2.5em;
-  margin: 0 20px;
+  font-size: 30px;
+  margin: 0;
 }
 div.jumbotron div.content h3.subtitle {
   margin: 20px 0;
-  font-size: 1em;
-  text-decoration: underline;
+  font-size: 30px;
 }
 div.jumbotron div.content p#quemsou {
-  font-size: .9em;
+  font-size: 30px;
   text-align: justify;
 }
 /*
@@ -84,10 +85,12 @@ div.jumbotron div.content p#skills span.skill {
   max-width: 210px;
 }
 */
-div.jumbotron span.content-icon {
+div.jumbotron a button.btn {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 25px;
+  text-transform: uppercase;
   float: right;
-  opacity: .5;
-  font-size: 1.2em;
 }
 div#panel-1 {
   background-color: rgba(102, 204, 255, 0.5);
@@ -110,7 +113,7 @@ div#panel-3:hover {
 div#media-wrapper {
   text-align: center;
   margin: 20px 0;
-  padding: 20px;
+  padding: 30px;
 }
 div#media-wrapper div.media-box {
   display: inline-block;
@@ -128,7 +131,7 @@ div#media-wrapper div.media-box:hover {
   border-radius: 10px;
 }
 div#media-wrapper div.media-box img {
-  margin: 20px;
+  margin: 30px;
   vertical-align: -200%;
 }
 div#media-wrapper div.media-box span {
@@ -184,4 +187,52 @@ form#contato input[type="submit"] {
   height: 55px;
   max-width: 110px;
   padding: 5px;
+}
+div.port {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.05);
+  -webkit-transition: all ease-out 1s;
+  -moz-transition: all ease-out 1s;
+  -o-transition: all ease-out 1s;
+  transition: all ease-out 1s;
+}
+div.port:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+div.port div.port-title-holder,
+div.port img.port-thumb {
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+div.port img.port-thumb {
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  height: 150px;
+  border-radius: 10px;
+}
+div.port div.port-title-holder {
+  margin: 0px;
+  padding: 0 10px;
+  width: auto;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+div.port div.port-title-holder h3.port-subtitle,
+h3.form_subtitle {
+  margin: 20px 0;
+  font-size: 1em;
+}
+div.port div.port-title-holder a button.btn {
+  margin: 0;
+  padding: 2px 15px;
+  font-size: 0.8em;
+}
+div.port img.port-thumb {
+  vertical-align: top;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }

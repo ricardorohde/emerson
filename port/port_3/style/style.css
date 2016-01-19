@@ -1,0 +1,251 @@
+/*CSS*/
+/*body*/
+body {
+	font-family: 'Quicksand', sans-serif;
+	background-color:#fff;
+	color: #000;
+	margin:	0;
+	padding:	0;
+}
+
+/*navbar_top*/
+div#navbar_top {
+	background-color:rgb(225,225,255);
+	padding:2px;
+	text-align:right;
+	border-radius:0 0 10px 10px;
+}
+
+div#navbar_top span {
+	margin: 20px;
+	padding: 2px 10px;
+	background-color:rgb(225,225,255);
+}
+
+div#navbar_top span:hover {
+	background-color:rgb(255,255,255);
+}
+
+div#navbar_top span:hover a {
+	color:#06C;
+}
+
+div#navbar_top a {
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size:14px;
+	color:#666;
+}
+
+/*header*/
+div#header {
+	text-align:center;
+	background:rgb(255,255,255);
+}
+
+div#header img#logo {
+	height:	150px;
+	margin: 15px 20px 5px;
+	display: inline-block;
+}
+
+div#side_logo {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	margin: 20px 60px 0;
+	padding:0;
+	overflow:auto;
+	vertical-align:top;
+	
+	background-color:rgb(255,255,255);
+}
+
+div#side_logo span {
+	display: block;
+	margin: 10px 20px;
+	padding: 10px;
+	color: #fff;
+	font-size:18px;
+	background-color:#990000;
+	border-radius:10px;
+	vertical-align:top;
+}
+
+img#fb {
+	vertical-align:top;
+	margin:20px 10px;
+}
+
+/*main_box*/
+div#main_box {
+	background-color:rgb(225,225,255);
+	margin:	0 0 15px;
+	height:	auto;
+	text-align:	center;
+	box-shadow: 0 0 10px #ccc;
+}
+
+/*
+img#fachada_box {
+	margin:	10px;
+	height:	300px;
+	width:	300px;
+	display:	inline-block;
+	overflow:	auto;
+    box-shadow:         2px 2px 20px #000;
+}
+*/
+
+.container {
+	border: 2px solid #fff;
+	height: auto;
+	margin: 20px;
+	display: inline-block;
+	overflow:auto;
+    box-shadow: 0 0 10px #ccc;
+	border-radius: 5px;
+}
+
+#container_1 {
+	width: 300px;
+	background-color: rgb(0, 107, 143);
+}
+
+#container_1 img {
+	width: 196px;
+	margin: 0px;
+    box-shadow: 1px 1px 10px #000;
+}
+
+#container_2 {
+	min-height: 295px;
+	width: 500px;
+	background-color: rgb(0, 153, 204);
+}
+
+#container_2 img {
+	max-width: 35%;
+	margin: 0;
+}
+
+.container span {
+	display: block;
+	margin: 20px 0;
+	padding:10px;
+	color: #000;
+	background-color: #fff;
+	text-transform: capitalize;
+}
+	
+.container a {
+	text-decoration: none;
+}
+
+.container input[type="button"] {
+	padding: 10px 30px;
+	margin: 20px auto;
+	background-color: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+	font-family: 'Quicksand', sans-serif;
+	font-weight:700;
+	text-transform: capitalize;
+	display: block;
+}
+
+.container input[type="button"]:hover {
+	background-color:#fff;
+	color:#000;
+	border: 2px solid transparent;
+	cursor:pointer;
+}
+
+
+/*slideshow*/
+#slider_wrapper {
+    height:             auto;
+    width:              100%;
+    margin:             0;
+    position:           relative;
+    overflow:           hidden;
+    background-color:   #fff;
+    box-shadow:         0 0 10px #ccc;
+	display:			inline-block;
+	vertical-align:		113%;
+}
+
+#slider_wrapper #image {
+    height:             100%;
+    width:              101%;
+    margin:             0 0 -5px;
+}
+
+#slider_wrapper div {
+    height:             400px;
+    width:              100px;
+    position:           absolute;
+    top:                0;
+}
+
+#slider_wrapper #left_hold {
+    left:               0;
+}
+
+#slider_wrapper #right_hold {
+    right:              0;
+}
+
+#slider_wrapper div img {
+    height:             50px;
+    width:              50px;
+    position:           absolute;
+    top:                40%;
+    opacity:            0;
+}
+
+#slider_wrapper div #left {
+    left:               20px;
+    transition:         all .2s ease-in-out 0s;
+}
+
+#slider_wrapper div #right {
+    right:              20px;
+    transition:         all .5s ease-in-out 0s;
+}
+
+#slider_wrapper div:hover .arrow {
+    opacity:            0.6;
+}
+
+/*box_holder*/
+div#box_holder {
+	background-color:rgb(225,225,255);
+	margin:	2px 2px 15px;
+	height:	auto;
+	text-align:	center;
+	box-shadow: 0 0 10px #ccc;
+}
+
+div#large_box {
+	background-color:	#666;
+	margin:	10px;
+	height:	250px;
+	width:	500px;
+	display:	inline-block;
+}
+
+div#small_box {
+	background-color:	#999;
+	margin:	10px;
+	height:	250px;
+	width:	250px;
+	display:	inline-block;
+}
+
+
+div#footer {
+	background-color:rgb(106,106,255);
+	height:	300px;
+	padding: 20px;
+}
