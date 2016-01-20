@@ -11,6 +11,8 @@ a:focus {
 body {
   font-family: 'Amatic SC', cursive;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
 nav.navbar {
   /* For browsers that do not support gradients */
@@ -121,7 +123,10 @@ div#media-wrapper div.media-box {
   -moz-transition: all ease-out 1s;
   -o-transition: all ease-out 1s;
   transition: all ease-out 1s;
-  margin: 5px;
+  width: 100%;
+  max-width: 200px;
+  margin: 5px 20px;
+  padding: 5px;
   border: 1px dashed transparent;
   border-radius: 5px;
 }
@@ -133,13 +138,15 @@ div#media-wrapper div.media-box:hover {
 div#media-wrapper div.media-box img {
   margin: 30px;
   vertical-align: -200%;
+  margin: 10px;
 }
 div#media-wrapper div.media-box span {
-  font-size: 2em;
+  font-size: 30px;
+  margin: 10px;
 }
 footer {
   text-align: center;
-  margin: 30px 0 0;
+  margin: 20px 0;
   background-color: rgba(0, 0, 0, 0.6);
   color: #ffffff;
 }
@@ -189,12 +196,14 @@ form#contato input[type="submit"] {
   padding: 5px;
 }
 div.port {
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.6);
   -webkit-transition: all ease-out 1s;
   -moz-transition: all ease-out 1s;
   -o-transition: all ease-out 1s;
@@ -202,7 +211,8 @@ div.port {
 }
 div.port:hover {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 div.port div.port-title-holder,
 div.port img.port-thumb {

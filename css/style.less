@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 
+// DEFAULT SETTINGS
+
 .default-transition() {
   -webkit-transition: all ease-out 1s;
   -moz-transition: all ease-out 1s;
@@ -22,6 +24,8 @@
 @default-padding: 30px;
 @default-border-radius: 10px;
 
+//
+
 a, 
 a:visited,
 a:hover,
@@ -35,9 +39,12 @@ a:focus {
 body {
   font-family: @default-font;
   color: @default-font-color;
+  margin: 0;
+  padding: 0;
 }
 
-.header-color(@gradient1, @gradient2) {
+.header-color(@gradient1, @gradient2)
+{
   /* For browsers that do not support gradients */
   background: @gradient1;
   /* For Safari 5.1 to 6.0 */
@@ -49,14 +56,11 @@ body {
   /* Standard syntax */
   background: linear-gradient(@gradient1, @gradient2);
 }
-
-
 nav.navbar {
   .header-color(rgb(255, 255, 255), rgb(250, 250, 250));
   margin: 0 0 10px 0;
   border-radius: 0;
 }
-
 
 nav.navbar div.navbar-header h1 {
   .inline-block;
@@ -140,14 +144,12 @@ div.jumbotron a button.btn {
     float: right;
 }
 
-
 .panel-coloring(@bg-color, @bg-color-hover) {
   background-color: @bg-color;
   &:hover {
     background-color: @bg-color-hover;
   }
 }
-
 @panel-1-bg-color: rgba(102, 204, 255, .5);
 @panel-1-bg-color-hover: rgb(102, 204, 255);
 
@@ -160,23 +162,25 @@ div#panel-1 { .panel-coloring(@panel-1-bg-color, @panel-1-bg-color-hover); }
 div#panel-2 { .panel-coloring(@panel-2-bg-color, @panel-2-bg-color-hover); }
 div#panel-3 { .panel-coloring(@panel-3-bg-color, @panel-3-bg-color-hover); }
 
-@media-wrapper-margin: 20px 0;
 div#media-wrapper {
   .center-txt;
-  margin: @media-wrapper-margin;
+  margin: 20px 0;
   padding: @default-padding;
 }
-
-@media-box-margin: 5px;
-@media-box-bg-color-hover: rgba(255, 255, 255, .35);
+ 
 div#media-wrapper div.media-box {
   .inline-block;
   .default-transition;
-  margin: @media-box-margin;
+  
+  width: 100%;
+  max-width: 200px;
+  
+  margin: 5px 20px;
+  padding: 5px;
   border: 1px dashed transparent;
   border-radius: 5px;
   &:hover {
-    background-color: @media-box-bg-color-hover;
+    background-color: rgba(255, 255, 255, .35);;
     border: 1px dashed gray;
     border-radius: @default-border-radius;
   }
@@ -185,32 +189,32 @@ div#media-wrapper div.media-box {
 div#media-wrapper div.media-box img {
   margin: @default-margin;
   vertical-align: -200%;
+  margin: 10px;
 }
 
 div#media-wrapper div.media-box span {
-  font-size: 2em;
+  font-size: 30px;
+  margin: 10px;
 }
 
-@footer-margin: 30px 0 0;
-@footer-bg-color: rgba(0, 0, 0, .6);
-@footer-font-color: rgb(255, 255, 255);
 footer {
   .center-txt;
-  margin: @footer-margin;
-  background-color: @footer-bg-color;
-  color: @footer-font-color;
+  margin: 20px 0;
+  background-color: rgba(0, 0, 0, .6);
+  color: rgb(255, 255, 255);
 }
 
-@footer-img-margin: 50px 10px;
 footer img {
   .default-transition;
   .inline-block;
-  margin: @footer-img-margin;
+  margin: 50px 10px;
   opacity: 0.8;
   &:hover {
     opacity: 1;
   }
 }
+
+//  FORM
 
 .form-item() {
   margin: 10px auto;
@@ -243,32 +247,31 @@ form#contato input[type="submit"] {
   padding: 5px;
 }
 
+// PORTFOLIO
 
-
-
-
-
-
-
-
-
-
-div.port {	
-	box-shadow: 3px 3px 5px rgba(0, 0, 0, .2); 
+div.port {
+	box-shadow: 0 0 5px rgba(0, 0, 0, .1); 
 	border-radius: 10px;
+    
+    width: 100%;
+    max-width: 300px;
 	
 	padding: 10px;
-	margin: 20px;
+	margin: 10px;
 	
 	display: inline-block;
-	background-color: rgba(0, 0, 0, .05);
+	//border: 1px dashed rgba(0, 0, 0, .5);
+    
+    background-color: rgba(255, 255, 255, .6);
     
     .default-transition;
     
     &:hover {
       cursor: pointer;
-      background-color: rgba(0, 0, 0, .15);
-    }  
+      //background-color: rgba(0, 0, 0, .1);
+      box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+      background-color: rgba(255, 255, 255, .8);
+    } 
 }
 
 div.port div.port-title-holder,
