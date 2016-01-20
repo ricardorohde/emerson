@@ -58,19 +58,19 @@
     
     <div id="media-wrapper" class="jumbotron">
         
-        <a href="#">
+        <a href="https://www.linkedin.com/in/emersonmdca" target="_blank">
             <div class="media-box">
                 <img src="imgs/linkedin.png" />
                 <span>LinkedIn.</span>
             </div>
         </a>
-        <a href="#">
+        <a href="https://br.pinterest.com/emersonmdca/" target="_blank">
             <div class="media-box">
                 <img src="imgs/pinterest.png" />
                 <span>Pinterest.</span>
             </div>
         </a>
-        <a href="#">
+        <a href="https://amareisblog.wordpress.com/" target="_blank">
             <div class="media-box">
                 <img src="imgs/wordpress.png" />
                 <span>Blog.</span>
@@ -107,10 +107,10 @@
     
     
     <footer>
-        <a href="#"><img src="imgs/linkedin.png" /></a>
-        <a href="#"><img src="imgs/pinterest.png" /></a>
-        <a href="#"><img src="imgs/wordpress.png" /></a>
-    </footer>
+		<a href="https://www.linkedin.com/in/emersonmdca" target="_blank"><img src="imgs/linkedin.png" /></a>
+		<a href="https://br.pinterest.com/emersonmdca/" target="_blank"><img src="imgs/pinterest.png" /></a>
+		<a href="https://amareisblog.wordpress.com/" target="_blank"><img src="imgs/wordpress.png" /></a>
+	</footer>
     	
 </body>
 </html>
