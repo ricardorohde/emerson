@@ -1,5 +1,6 @@
 
     <?php
+        /*
         error_reporting(0);
         ini_set('display_errors', 0);
 
@@ -10,13 +11,11 @@
         
         $to = 'emerson.mdca@gmail.com';
         $subj = 'Nova Mensagem do Site emersonmendonca.com';
-        $msg = wordwrap($msg, 70);
-        $headers = 'From: $email' . "\r\n" .
-                    'Empresa: $empresa' . 
-                    'Nome: $nome' .
-                    'X-Mailer: PHP/' . phpversion();
-    
-        mail($to, $subj, $msg, $headers);
+        //$msg= wordwrap($msg, 70);
+        $msg .= '/n $nome, $email, $empresa';
+        
+        mail($to, $subj, $msg);
+        */
     ?>
 
 <form id="contato" action="index.php#panel-3" method="post">
