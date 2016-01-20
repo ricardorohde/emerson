@@ -34,11 +34,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul id="nav-menu" class="nav navbar-nav">
-                <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Sobre Mim </a></li>
-                <li><a href="page_port.php">Portfólio </a></li>
-                <li><a href="#">Contato </a></li>
-                <li><a href="#">Blog </a></li>
+                <!--    <li><a href="index.php">Home <span class="sr-only">(current)</span></a></li>    -->
+                <li><a href="#panel-1">Sobre Mim </a></li>
+                <li><a href="#panel-2">Portfólio </a></li>
+                <li><a href="#panel-3">Contato </a></li>
+                <li><a href="https://amareisblog.wordpress.com/" target="_blank">Blog </a></li>
             </ul>		      
         </div><!-- /.navbar-collapse -->
         
@@ -50,42 +50,12 @@
         <!--<span class="legend">Onde mora, como vive, do que se alimenta...</span>-->
         
         <div class="content">
-            
-            <h3 class="subtitle">Quem sou?</h3>
-            <p id="quemsou">
-                Salut, sou Emerson Mendonça. Sou instrutor de inglês e estudante de tecnologia da informação.
-                Formado em TI, moro no ABC paulista em São Paulo e dedico meus estudos a área de desenvolvimento.
-            </p>            
+            <?php include 'includes/sobremim.php'; ?>
         </div>
         
-        <a href="#"><button type="button" class="btn btn-default">Ver Mais</button></a>
-        
     </div>
-
-    <div id="panel-2" class="jumbotron">
-        
-        <h2 class="title">Portfólio</h2>
-        <!--<span class="legend">Separe um tempinho para apreciar meus trabalhos!</span>-->
-        
-        <div class="content">
-            <?php include 'includes/portfolio.php'; ?>
-        </div>
-        
-        <a href="#"><button type="button" class="btn btn-default">Ver Mais</button></a>
-        
-    </div>
-
-    <div id="panel-3" class="jumbotron">
-        
-        <h2 class="title">Contato</h2>
-        <!--<span class="legend">Fale comigo, me mande uma pergunta, sugestão, elogio ou, quem sabe, uma proposta! ;)</span>-->
-        
-        <div class="content">
-            <?php include 'includes/contato.php'; ?>
-        </div>        		
-    </div>
-
-
+    
+    
     <div id="media-wrapper" class="jumbotron">
         
         <a href="#">
@@ -108,6 +78,33 @@
         </a>
         
     </div>
+    
+    
+    
+
+    <div id="panel-2" class="jumbotron">
+        
+        <h2 class="title">Portfólio</h2>
+        <!--<span class="legend">Separe um tempinho para apreciar meus trabalhos!</span>-->
+        
+        <div class="content">
+            <?php include 'includes/portfolio.php'; ?>
+        </div>
+                
+    </div>
+
+    <div id="panel-3" class="jumbotron">
+        
+        <h2 class="title">Contato</h2>
+        <!--<span class="legend">Fale comigo, me mande uma pergunta, sugestão, elogio ou, quem sabe, uma proposta! ;)</span>-->
+        
+        <div class="content">
+            <?php include 'includes/contato.php'; ?>
+        </div>        		
+    </div>
+
+
+    
     
     <footer>
         <a href="#"><img src="imgs/linkedin.png" /></a>
