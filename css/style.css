@@ -26,17 +26,17 @@ nav.navbar {
   /* Standard syntax */
   background: linear-gradient(#ffffff, #fafafa);
   margin: 0 0 10px 0;
+  padding: 20px;
   border-radius: 0;
 }
 nav.navbar div.navbar-header h1 {
-  display: inline-block;
-  margin: 30px;
+  margin: 0 30px 10px 0;
   font-size: 60px;
   color: #000000;
   text-transform: uppercase;
 }
 nav.navbar ul.nav {
-  margin: 25px 0 0 0;
+  margin: 0;
 }
 nav.navbar ul.nav li {
   font-size: 30px;
