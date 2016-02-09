@@ -7,8 +7,7 @@ $(function() {
                         'Scrum', 'UML', 'ITIL', 'Project Management'];
 	*/
 	
-	var skillsList = ['HMTL5', 'CSS3', 'JavaScript', 'Bootstrap', 'Less',
-										'jQuery', 'OOP', 'MVC', 'Git'];
+	var skillsList = ['HMTL5', 'CSS3', 'JavaScript', 'Bootstrap', 'Sass',  'Less', 'jQuery', 'OOP', 'MVC', 'Git'];
 	
 	for(var i=0; i < skillsList.length; i++) {
 		$('#skills')

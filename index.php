@@ -42,23 +42,52 @@
     
     <div id="media-wrapper" class="jumbotron">
         <div class="media-box">
-            <a href="https://www.linkedin.com/in/emersonmdca" target="_blank">
-                <img src="imgs/linkedin.png" />
+            <a href="https://github.com/emersonmdca" target="_blank">
+                <img src="imgs/github.png" />
             </a>
         </div>
         
         <div class="media-box">
-            <a href="https://br.pinterest.com/emersonmdca/" target="_blank">
-                <img src="imgs/pinterest.png" />
+            <a href="https://plus.google.com/111551378075736234890/posts" target="_blank">
+                <img src="imgs/gplus.png" />
             </a>
         </div>
 
         <div class="media-box">
-            <a href="https://inglessimples.wordpress.com/" target="_blank">
+            <a href="https://www.linkedin.com/in/emersonmdca" target="_blank">
+                <img src="imgs/linkedin.png" />
+            </a>
+        </div>
+
+        <div class="media-box">
+            <a href="https://br.pinterest.com/emersonmdca/" target="_blank">
+                <img src="imgs/pinterest.png" />
+            </a>
+        </div>  
+
+        <div class="media-box">
+            <a href="https://player.spotify.com/user/emersonmendon%C3%A7a" target="_blank">
+                <img src="imgs/spotify.png" />
+            </a>
+        </div>  
+
+        <div class="media-box">
+            <a href="https://twitter.com/emersonmdca" target="_blank">
+                <img src="imgs/twitter.png" />
+            </a>
+        </div>  
+
+        <div class="media-box">
+            <a href="https://wordpress.com/" target="_blank">
                 <img src="imgs/wordpress.png" />
             </a>
-        </div>       
+        </div>
+        
+        <div class="media-box">
+            <a href="https://www.youtube.com/channel/UCVwAyvJuhpTjsFiAmcmm9-w" target="_blank">
+                <img src="imgs/youtube.png" />
+            </a>
+        </div>
     </div>
-
 </body>
 </html>
