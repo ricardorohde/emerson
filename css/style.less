@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 
 // DEFAULT SETTINGS
 
@@ -17,7 +18,10 @@
   text-align: center;
 }
 
-@default-font: 'Amatic SC', cursive;
+@default-font: 'Raleway', sans-serif;
+
+//@default-font: 'Amatic SC', cursive;
+
 @default-font-color: rgb(0, 0, 0);
 @default-font-size: 20px;
 @default-margin: 30px;
@@ -43,176 +47,78 @@ body {
   padding: 0;
 }
 
-.header-color(@gradient1, @gradient2)
-{
-  /* For browsers that do not support gradients */
-  background: @gradient1;
-  /* For Safari 5.1 to 6.0 */
-  background: -webkit-linear-gradient(@gradient1, @gradient2);
-  /* For Opera 11.1 to 12.0 */
-  background: -o-linear-gradient(@gradient1, @gradient2);
-  /* For Firefox 3.6 to 15 */
-  background: -moz-linear-gradient(@gradient1, @gradient2);
-  /* Standard syntax */
-  background: linear-gradient(@gradient1, @gradient2);
-}
-nav.navbar {
-  .header-color(rgb(255, 255, 255), rgb(250, 250, 250));
-  margin: 0 0 10px 0;
-  padding: 20px;
-  border-radius: 0;
-}
-
-nav.navbar div.navbar-header h1 {
-  
-  margin: 0 30px 10px 0;
-  font-size: 60px;
-  color: @default-font-color;
-  text-transform: uppercase;
-}
-
-nav.navbar ul.nav {
-  margin: 0;
-}
-
-nav.navbar ul.nav li {
-  font-size: 30px;
-  margin: 10px;
-  text-transform: uppercase;
+h1 {
+    margin: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+    text-transform: uppercase;
 }
 
 div.jumbotron {
-  .default-transition;
-  margin: 2px 0;
-  padding: 30px 30px 60px 30px;  
-  //&:hover {
-    //cursor: pointer;
-  //}  
-}
-
-div.teste {
-    display: inline-block;
+    margin: 10px 0;
+    padding: 20px 30px 30px;
 }
 
 .jumbo-title() {
   .inline-block;
-  /* margin: 20px; */
 }
 
 div.jumbotron h2.title {
   .jumbo-title;
-  font-size: 35px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/*
-div.jumbotron span.legend {
-  font-size: 2.3em;
-}
-*/
-
 div.jumbotron div.content {
-  font-size: 30px;
+  font-size: 20px;
   margin: 0;
 }
 
 div.jumbotron div.content h3.subtitle {
   margin: 20px 0;
-  font-size: 30px;
+  font-size: 20px;
   // text-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
 }
 
 div.jumbotron div.content p {
   margin: 0 0 0 30px;
-  font-size: 30px;
+  font-size: 20px;
   text-align: justify;
 }
 
 div.jumbotron div.content p#skills span.skill {
-  .inline-block;
-  font-size: 30px;
-  margin: 0 10px;
-  width: 100%;
-  max-width: 210px;
-}
-
-div.jumbotron a button.btn {
-    margin: 0;
+    .inline-block;
+    font-size: 20px;
+    margin: 5px;
     padding: 5px 10px;
-    font-size: 25px;
-    text-transform: uppercase;
-    float: right;
+    background: rgba(2555, 2555, 255, 1);
 }
 
-.panel-coloring(@bg-color, @bg-color-hover) {
-  background-color: @bg-color;
-  &:hover {
-    background-color: @bg-color-hover;
-  }
-}
-@panel-1-bg-color: rgba(102, 204, 255, .5);
-@panel-1-bg-color-hover: rgb(102, 204, 255);
-
-@panel-2-bg-color: rgba(255, 204, 0, .5);
-@panel-2-bg-color-hover: rgb(255, 204, 0);
-
-@panel-3-bg-color: rgba(153, 255, 102, .5);
-@panel-3-bg-color-hover: rgb(153, 255, 102);
-div#panel-1 { .panel-coloring(@panel-1-bg-color, @panel-1-bg-color-hover); }
-div#panel-2 { .panel-coloring(@panel-2-bg-color, @panel-2-bg-color-hover); }
-div#panel-3 { .panel-coloring(@panel-3-bg-color, @panel-3-bg-color-hover); }
+div#panel-1 { background:rgb(102, 204, 255) }
+div#panel-2 { background:rgb(255, 204, 0) }
+div#panel-3 { background:rgb(153, 255, 102) }
 
 div#media-wrapper {
   .center-txt;
-  margin: 20px 0;
-  padding: @default-padding;
+  margin: 0;
+  padding: 10px;
 }
  
 div#media-wrapper div.media-box {
   .inline-block;
-  .default-transition;
-  
-  width: 100%;
-  max-width: 200px;
-  
-  margin: 5px 20px;
-  padding: 5px;
-  border: 1px dashed transparent;
-  border-radius: 5px;
-  &:hover {
-    background-color: rgba(255, 255, 255, .35);;
-    border: 1px dashed gray;
-    border-radius: @default-border-radius;
-  }
 }
 
 div#media-wrapper div.media-box img {
   margin: @default-margin;
   vertical-align: -200%;
   margin: 10px;
+  height: 50px;
 }
 
 div#media-wrapper div.media-box span {
-  font-size: 30px;
+  font-size: 20px;
   margin: 10px;
-}
-
-footer {
-  .center-txt;
-  margin: 20px 0 0 0;
-  background-color: rgba(0, 0, 0, .6);
-  color: rgb(255, 255, 255);
-}
-
-footer img {
-  .default-transition;
-  .inline-block;
-  margin: 50px 10px;
-  opacity: 0.8;
-  &:hover {
-    opacity: 1;
-  }
 }
 
 //  FORM
@@ -223,7 +129,7 @@ footer img {
   max-width: 400px;
   width: 100%;
   display: block;  
-  font-size: .8em;
+  font-size: 17px;
 }
 
 form#contato {
@@ -243,9 +149,8 @@ form#contato textarea {
 
 form#contato input[type="submit"] {
   .form-item;
-  height: 55px;
-  max-width: 110px;
-  padding: 5px;
+  height: 50px;
+  max-width: 100px;
 }
 
 // PORTFOLIO
@@ -255,69 +160,49 @@ div#port-wrapper {
 }
 
 div.port {
-	box-shadow: 0 0 5px rgba(0, 0, 0, .1); 
-	border-radius: 10px;
-    
-    width: 100%;
-    max-width: 300px;
-	
-	padding: 10px;
-	margin: 10px 0;
-	
-	display: inline-block;
-	//border: 1px dashed rgba(0, 0, 0, .5);
-    
-    background-color: rgba(255, 255, 255, .6);
-    
     .default-transition;
-    
+    padding: 10px;
+	margin: 5px;
+    width: 100%;
+    max-width: 180px;
+	display: inline-block;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
     &:hover {
       cursor: pointer;
-      //background-color: rgba(0, 0, 0, .1);
-      box-shadow: 0 0 15px rgba(0, 0, 0, .5);
-      background-color: rgba(255, 255, 255, .8);
+      border-radius: 20px;
     } 
 }
 
 div.port div.port-title-holder,
 div.port img.port-thumb {
-	display: inline-block;
+	display: block;
 	border: 1px solid rgba(0, 0, 0, 0);
 }
 
 div.port img.port-thumb {
 	width: auto;
 	max-width: 100%;
-	margin: 0;
-	
-	height: 150px;
-	
-	border-radius: 10px;
-	
+	margin: 0 auto;
+	height: 100px;
+	border-radius: 0px;
 }
 
 div.port div.port-title-holder {
 	margin: 0px;
 	padding: 0 10px;
 	width: auto;
-	
 	border: 1px solid rgba(0, 0, 0, 0);
 }
 
 div.port div.port-title-holder h3.port-subtitle,
 h3.form_subtitle {
-	margin: 20px 0;
-	font-size: 1em;
+	margin: 10px 0;
+	font-size: 20px;
 }
 
 div.port div.port-title-holder a button.btn {
 	margin: 0;
 	padding: 2px 15px;
-	font-size: 0.8em;
-}
-
-div.port img.port-thumb {
-	vertical-align: top;
-	
-	box-shadow: 3px 3px 5px rgba(0, 0, 0, .2); 
+	font-size: 20px;
 }
