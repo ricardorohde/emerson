@@ -51,6 +51,9 @@ div.jumbotron {
   margin: 2px 0;
   padding: 30px 30px 60px 30px;
 }
+div.teste {
+  display: inline-block;
+}
 div.jumbotron h2.title {
   display: inline-block;
   /* margin: 20px; */

@@ -44,7 +44,7 @@
         
     </nav>
 	
-        <div id="panel-1" class="jumbotron">
+    <div id="panel-1" class="jumbotron">
             
         <h2 class="title">Sobre Mim</h2>
         <!--<span class="legend">Onde mora, como vive, do que se alimenta...</span>-->
@@ -54,6 +54,29 @@
         </div>
         
     </div>
+    
+
+    <div id="panel-2" class="jumbotron">
+        
+        <h2 class="title">Portfólio</h2>
+        <!--<span class="legend">Separe um tempinho para apreciar meus trabalhos!</span>-->
+        
+        <div class="content">
+            <?php include 'includes/portfolio.php'; ?>
+        </div>
+                
+    </div>
+
+    <div id="panel-3" class="jumbotron">
+        
+        <h2 class="title">Contato</h2>
+        <!--<span class="legend">Fale comigo, me mande uma pergunta, sugestão, elogio ou, quem sabe, uma proposta! ;)</span>-->
+        
+        <div class="content">
+            <?php include 'includes/contato.php'; ?>
+        </div>        		
+    </div>
+    
     
     
     <div id="media-wrapper" class="jumbotron">
@@ -78,32 +101,6 @@
         </a>
         
     </div>
-    
-    
-    
-
-    <div id="panel-2" class="jumbotron">
-        
-        <h2 class="title">Portfólio</h2>
-        <!--<span class="legend">Separe um tempinho para apreciar meus trabalhos!</span>-->
-        
-        <div class="content">
-            <?php include 'includes/portfolio.php'; ?>
-        </div>
-                
-    </div>
-
-    <div id="panel-3" class="jumbotron">
-        
-        <h2 class="title">Contato</h2>
-        <!--<span class="legend">Fale comigo, me mande uma pergunta, sugestão, elogio ou, quem sabe, uma proposta! ;)</span>-->
-        
-        <div class="content">
-            <?php include 'includes/contato.php'; ?>
-        </div>        		
-    </div>
-
-
     
     
     <footer>
