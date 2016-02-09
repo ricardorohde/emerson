@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 a,
 a:visited,
 a:hover,
@@ -10,26 +9,34 @@ a:focus {
   color: #000;
 }
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Inconsolata';
   color: #000000;
   margin: 0;
   padding: 0;
 }
 h1 {
-  margin: 20px;
-  font-family: 'Amatic SC', cursive;
-  font-size: 60px;
-  text-transform: uppercase;
+  display: inline-block;
+  margin: 20px 0 20px 20px;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+p#header-span {
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 20px 20px;
+  width: 190px;
 }
 div.jumbotron {
-  margin: 10px 0;
+  margin: 0;
   padding: 20px 30px 30px;
 }
 div.jumbotron h2.title {
   display: inline-block;
   font-size: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
+  text-transform: capitalize;
+  padding: 5PX 10px;
+  color: #ffffff;
+  background-color: #000000;
 }
 div.jumbotron div.content {
   font-size: 20px;
@@ -133,7 +140,6 @@ div.port:hover {
 div.port div.port-title-holder,
 div.port img.port-thumb {
   display: block;
-  border: 1px solid rgba(0, 0, 0, 0);
 }
 div.port img.port-thumb {
   width: auto;

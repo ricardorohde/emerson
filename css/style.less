@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 
 // DEFAULT SETTINGS
 
@@ -18,10 +17,7 @@
   text-align: center;
 }
 
-@default-font: 'Raleway', sans-serif;
-
-//@default-font: 'Amatic SC', cursive;
-
+@default-font: 'Inconsolata', ;
 @default-font-color: rgb(0, 0, 0);
 @default-font-size: 20px;
 @default-margin: 30px;
@@ -48,14 +44,21 @@ body {
 }
 
 h1 {
-    margin: 20px;
-    font-family: 'Amatic SC', cursive;
-    font-size: 60px;
-    text-transform: uppercase;
+    .inline-block;
+    margin: 20px 0 20px 20px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+p#header-span {
+    .inline-block;
+    font-size: 20px;
+    margin: 0 20px 20px;
+    width: 190px;
 }
 
 div.jumbotron {
-    margin: 10px 0;
+    margin: 0;
     padding: 20px 30px 30px;
 }
 
@@ -64,10 +67,12 @@ div.jumbotron {
 }
 
 div.jumbotron h2.title {
-  .jumbo-title;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
+    .jumbo-title;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 5PX 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0)
 }
 
 div.jumbotron div.content {
@@ -177,7 +182,6 @@ div.port {
 div.port div.port-title-holder,
 div.port img.port-thumb {
 	display: block;
-	border: 1px solid rgba(0, 0, 0, 0);
 }
 
 div.port img.port-thumb {

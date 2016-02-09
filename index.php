@@ -17,6 +17,7 @@
 <body>
     
     <h1>Emerson Mendonça</h1>
+    <p id="header-span">Front-End Developer</p>
 	
     <div id="panel-2" class="jumbotron">
         <h2 class="title">Portfólio</h2>        
