@@ -1,20 +1,27 @@
+// PRE SETTINGS
+
 @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 
-// DEFAULT SETTINGS
+.transition-default() {
+    -webkit-transition: all ease-out 1s;
+    -moz-transition: all ease-out 1s;
+    -o-transition: all ease-out 1s;
+    transition: all ease-out 1s;
+}
 
-.default-transition() {
-  -webkit-transition: all ease-out 1s;
-  -moz-transition: all ease-out 1s;
-  -o-transition: all ease-out 1s;
-  transition: all ease-out 1s;
+.transition-quick() {
+    -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
 }
 
 .inline-block() {
-  display: inline-block;
+    display: inline-block;
 }
 
 .center-txt() {
-  text-align: center;
+    text-align: center;
 }
 
 @default-font: 'Inconsolata', ;
@@ -24,7 +31,7 @@
 @default-padding: 30px;
 @default-border-radius: 10px;
 
-//
+// STYLES
 
 a, 
 a:visited,
@@ -32,15 +39,15 @@ a:hover,
 a:active,
 a:visited, 
 a:focus {
-  text-decoration: none;
-  color: #000;
+    text-decoration: none;
+    color: #000;
 }
 
 body {
-  font-family: @default-font;
-  color: @default-font-color;
-  margin: 0;
-  padding: 0;
+    font-family: @default-font;
+    color: @default-font-color;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -63,7 +70,7 @@ div.jumbotron {
 }
 
 .jumbo-title() {
-  .inline-block;
+    .inline-block;
 }
 
 div.jumbotron h2.title {
@@ -76,20 +83,19 @@ div.jumbotron h2.title {
 }
 
 div.jumbotron div.content {
-  font-size: 20px;
-  margin: 0;
+    font-size: 20px;
+    margin: 0;
 }
 
 div.jumbotron div.content h3.subtitle {
-  margin: 20px 0;
-  font-size: 20px;
-  // text-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    margin: 20px 0;
+    font-size: 20px;
 }
 
 div.jumbotron div.content p {
-  margin: 0 0 0 30px;
-  font-size: 20px;
-  text-align: justify;
+    margin: 0 0 0 30px;
+    font-size: 20px;
+    text-align: justify;
 }
 
 div.jumbotron div.content p#skills span.skill {
@@ -104,58 +110,63 @@ div#panel-1 { background:rgba(0, 0, 0, .05) }
 div#panel-2 { background:rgba(0, 0, 0, .15) }
 div#panel-3 { background:rgba(0, 0, 0, .15) }
 
-div#media-wrapper {
-  .center-txt;
-  margin: 0;
-  padding: 10px;
+footer {
+    .center-txt;
+    margin: 0;
+    padding: 10px;
 }
  
-div#media-wrapper div.media-box {
-  .inline-block;
+footer div.media-box {
+    .inline-block;
 }
 
-div#media-wrapper div.media-box img {
-  margin: @default-margin;
-  vertical-align: -200%;
-  margin: 10px;
-  height: 50px;
+footer div.media-box img {
+    .transition-quick;
+    margin: @default-margin;
+    vertical-align: -200%;
+    margin: 10px;
+    height: 50px;
+    opacity: 0.75;
+    &:hover {
+        opacity: 1;
+    }
 }
 
-div#media-wrapper div.media-box span {
-  font-size: 20px;
-  margin: 10px;
+footer div.media-box span {
+    font-size: 20px;
+    margin: 10px;
 }
 
 //  FORM
 
 .form-item() {
-  margin: 10px auto;
-  padding: 10px;
-  max-width: 400px;
-  width: 100%;
-  display: block;  
-  font-size: 17px;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 400px;
+    width: 100%;
+    display: block;  
+    font-size: 17px;
 }
 
 form#contato {
-  margin: 0;
+    margin: 0;
 }
 
 form#contato input[type="text"] {
-  .form-item;
-  height: 60px;
+    .form-item;
+    height: 60px;
 }
 
 form#contato textarea {
-  .form-item;
-  height: 150px;
-  max-height: 300px;
+    .form-item;
+    height: 150px;
+    max-height: 300px;
 }
 
 form#contato input[type="submit"] {
-  .form-item;
-  height: 50px;
-  max-width: 100px;
+    .form-item;
+    height: 50px;
+    max-width: 100px;
 }
 
 // PORTFOLIO
@@ -165,7 +176,7 @@ div#port-wrapper {
 }
 
 div.port {
-    .default-transition;
+    .transition-quick;
     padding: 10px;
 	margin: 5px;
     width: 100%;
@@ -174,8 +185,9 @@ div.port {
     background-color: rgba(255, 255, 255, .3);
     box-shadow: 0 0 5px rgba(0, 0, 0, .1);
     &:hover {
-      cursor: pointer;
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, .1)
+        cursor: pointer;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
+        background-color: rgba(255, 255, 255, .7);
     }
 }
 
